@@ -1,0 +1,82 @@
+import java.util.*;
+public class Linked_List {
+    
+    Node Head;
+    
+    static class Node{
+
+        int Data;
+        Node Next;
+
+        Node(int a){
+        
+            Data=a;
+            Next=null;
+        
+        }
+        
+}
+    // INSERTION IN A LINKED LIST
+    
+    public static Linked_List insert(Linked_List list,int Data){
+    
+    Node add_node=new Node(Data);
+    add_node.Next=null;
+    
+    if(list.Head==null){
+    
+        list.Head=add_node;
+    
+    }
+    else{
+    
+    Node last=list.Head;
+    while(last.Next!=null){
+    
+    last=last.Next;
+    
+    }
+     
+    last.Next=add_node;
+    
+    }
+    
+    return list;
+    
+    }
+    
+    
+    public static void printLinkedList(Linked_List list){
+    
+     Node currentNode = list.Head; 
+   
+        System.out.print("LinkedList: "); 
+   
+        
+        while (currentNode != null) { 
+            
+            System.out.print(currentNode.Data + " "); 
+   
+            
+            currentNode = currentNode.Next; 
+        } 
+        
+    }
+    
+    
+    public static void main(String args[]){
+    
+        Linked_List list=new Linked_List();
+        list = insert(list, 10); 
+        list = insert(list, 20); 
+        list = insert(list, 30); 
+        list = insert(list, 40); 
+        list = insert(list, 50); 
+        list = insert(list, 60); 
+        list = insert(list, 70); 
+        list = insert(list, 80); 
+    
+    
+        printLinkedList(list);
+    }
+}
