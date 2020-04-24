@@ -1,5 +1,5 @@
 public class Binary_Search {
-    
+    //Recursive implementation for binary search in time complexity O(logn)
     int binary_search(int x[],int l, int r, int y){
      
         if(r>=1){
@@ -23,6 +23,25 @@ public class Binary_Search {
         
         
         return -1;
+    }
+    
+    /*
+    Iterative implementation for binary search in same time complexity O(Logn)
+    Driver hasn't called this iterative implementation.For execution create DRIVER.
+    */
+    int binarySearchIterative(int arr[],int element){
+        int firstindex=0,lastindex=arr.length-1;
+        while(firstindex<=lastindex){
+        int mid=(firstindex+(lastindex-1))/2;
+            if(arr[mid]==element)
+                return mid;
+            if(arr[mid]<element)
+                return firstindex=mid+1;
+            else
+                return lastindex=mid-1;
+                
+        }
+    return -1;
     }
     
     
