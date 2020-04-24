@@ -1,3 +1,12 @@
+/*
+
+For every node we are going to add that nodes name to the outputarray and then for every
+child node that node has we will call the DFS function.
+
+GIVEN BELOW IS A SIMLE RECURSIVE SOLUTION FOR DEPTH FIRST SEARCH
+
+*/
+
 class Program {
   
   static class Node {
