@@ -1,32 +1,34 @@
 import java.util.*;
 public class BubbleSort {
     
-    static void bubbleSort(int[] x,int n){
+    static int[] bubbleSort(int[] array){
     
-      int i, j, temp; 
-        boolean flag; 
-        for (i = 0; i < n - 1; i++)  
-        { 
-           flag = true; 
-            for (j = 0; j < n - i - 1; j++)  
-            { 
-                if (x[j] > x[j + 1])  
-                { 
+     if(array.length==0){
+    return new int[] {};
+	}
+		
+	boolean isSorted=false;
+	int flag=0;
+	
+	while(!isSorted){
+		
+		isSorted=true;
+		for(int i=0;i<array.length-1-flag;i++){
+			if(array[i]>array[i+1]){
+			int temp=array[i];
+			array[i]=array[i+1];
+			array[i+1]=temp;
+			isSorted=false;
+			}
+		}
+		flag++;
+	}
+	return array;	
+  }
+        
+   
     
-                    temp = x[j]; 
-                    x[j] = x[j + 1]; 
-                    x[j + 1] = temp; 
-                    flag = false; 
-                } 
-            } 
-  
-            if (flag==true) 
-                break; 
-        } 
-    } 
-    
-    
-    
+
     static void printArray(int arr[], int size) 
     { 
         int i; 
@@ -47,7 +49,7 @@ public class BubbleSort {
     a[i]=sc.nextInt();
     }
     
-    bubbleSort(a, n);
+    bubbleSort(a);
     printArray(a,n);
     
     }
