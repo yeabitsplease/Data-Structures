@@ -1,35 +1,44 @@
+/*
+
+Space Complexity: O(1)
+Time Complexity: O(n^2)  {Worst Case}
+                 O(n)    {Best Case: When the array is sorted.}
+ 
+
+*/
+
+
 import java.util.*;
 public class SelectionSort {
-   static void selectionSort(int[] x){
-   int temp;
-   int n=x.length;
-    for(int i=0;i<n-1;i++){
-         int min=x[i];
-     for(int j=i+1;j<n;j++){
-     
-         if(x[j]<x[min])
-              min=j;      
-         {
-         
-             temp=x[min];
-             x[min]=x[i];
-             x[i]=temp;
-         
-         }
-     
-     }   
-    }
+   public static int[] selectionSort(int[] x){
+   
+       int startIdx=0;
+       while(startIdx<x.length-1){
+       
+       int smallestIdx=startIdx;
+       for(int i=startIdx+1;i<x.length;i++){
+       
+       if(x[smallestIdx]>x[i]){
+       smallestIdx=i;
+       }
+       
+       }
+       swap(startIdx,smallestIdx,x);
+       startIdx++;
+       }
+       
+       return x;
    }
    
+ public static void swap(int i,int j, int[] array){
+ 
+     int temp=array[i];
+     array[i]=array[j];
+     array[j]=temp;
+ 
+ }
    
-    static void printArray(int[] x){
-    
-        for(int i=0;i<x.length;i++){
-         System.out.print(x[i]+" ");   
-        }
-        System.out.println();
-    
-    }
+ 
     
     
     public static void main(String args[]){
@@ -42,8 +51,11 @@ public class SelectionSort {
         a[i]=sc.nextInt();
         }
         
-        selectionSort(a);
-        printArray(a);
+        int x[]=selectionSort(a);
+       for(int i=0;i<x.length;i++){
+       System.out.print(x[i]+" ");
+       
+       }
         
     
     }
