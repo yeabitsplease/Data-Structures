@@ -6,7 +6,7 @@ EG:
 |<--D--->|
 0->1->2->4->5-> 6 
          |      | 
-		9 <-8 <-7 
+	9 <-8 <-7 
 		
 In the above example the output is 4 because the loop originates at 4.
 
