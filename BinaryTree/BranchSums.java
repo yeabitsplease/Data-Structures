@@ -8,7 +8,10 @@ rigth child=2i+2
 
 output->[15,16,18,10,11]
 
+
 */
+
+//This is a recursive implementation in depth first search fashion with time and space complexity of O(n)
 class BranchSums{
   
   public static class BinaryTree {
@@ -37,7 +40,7 @@ public static void calculateBranchSum(BinaryTree Node,int runningSum,List<Intege
 		}
 	
 	
-calculateBranchSum(Node.left,newRunningSum,sum);
+	calculateBranchSum(Node.left,newRunningSum,sum);
 	calculateBranchSum(Node.right,newRunningSum,sum);
 	}
 }
