@@ -99,7 +99,7 @@
   * Range Sum: `O(log(n))`
   * Update: `O(log(n))`
 
-![Alt text](/images/fenwickTree.png?raw=true "Fenwick Tree")
+![Alt text](https://raw.githubusercontent.com/kdn251/interviews/master/images/fenwickTree.png "Fenwick Tree")
 
 ### Segment Tree
 * A Segment tree, is a tree data structure for storing intervals, or segments. It allows querying which of the stored segments contain
@@ -108,7 +108,7 @@
   * Range Query: `O(log(n))`
   * Update: `O(log(n))`
 
-![Alt text](/images/segmentTree.png?raw=true "Segment Tree")
+![Alt text](https://raw.githubusercontent.com/kdn251/interviews/master/images/segmentTree.png "Segment Tree")
 
 ### Heap
 * A *Heap* is a specialized tree based structure data structure that satisfies the *heap* property: if A is a parent node of
@@ -121,7 +121,7 @@ or equal to those of the children and the lowest key is in the root node
   * Insert: `O(log(n))`
   * Remove Max / Min: `O(log(n))`
 
-<img src="/images/heap.png?raw=true" alt="Max Heap" width="400" height="500">
+<img src="https://raw.githubusercontent.com/kdn251/interviews/master/images/heap.png" alt="Max Heap" width="400" height="500">
 
 
 ### Hashing
@@ -137,7 +137,7 @@ or equal to those of the children and the lowest key is in the root node
  the fact that the location of an item is not always determined by its hash value
 
 
-![Alt text](/images/hash.png?raw=true "Hashing")
+![Alt text](https://raw.githubusercontent.com/kdn251/interviews/master/images/hash.png "Hashing")
 
 ### Graph
 * A *Graph* is an ordered pair of G = (V, E) comprising a set V of vertices or nodes together with a set E of edges or arcs,
@@ -149,7 +149,7 @@ or equal to those of the children and the lowest key is in the root node
  (u -> v), this does *not* imply that there exists an edge from node v to node u (v -> u)
 
 
-<img src="/images/graph.png?raw=true" alt="Graph" width="400" height="500">
+<img src="https://raw.githubusercontent.com/kdn251/interviews/master/images/graph.png" alt="Graph" width="400" height="500">
 
 ## Algorithms
 
@@ -162,7 +162,7 @@ or equal to those of the children and the lowest key is in the root node
   * Worst Case: `O(n^2)`
   * Average Case: `O(nlog(n))`
 
-![Alt text](/images/quicksort.gif?raw=true "Quicksort")
+![Alt text](https://raw.githubusercontent.com/kdn251/interviews/master/images/quicksort.gif "Quicksort")
 
 #### Mergesort
 * *Mergesort* is also a divide and conquer algorithm. It continuously divides an array into two halves, recurses on both the
@@ -183,7 +183,7 @@ or equal to those of the children and the lowest key is in the root node
   * Worst Case: `O(n^2)`
   * Average Case:`Θ(n + k)`
 
-![Alt text](/images/bucketsort.png?raw=true "Bucket Sort")
+![Alt text](https://raw.githubusercontent.com/kdn251/interviews/master/images/bucketsort.png "Bucket Sort")
 
 #### Radix Sort
 * *Radix Sort* is a sorting algorithm that like bucket sort, distributes elements of an array into a number of buckets. However, radix
@@ -192,6 +192,7 @@ or equal to those of the children and the lowest key is in the root node
   * Best Case: `Ω(nk)`
   * Worst Case: `O(nk)`
   * Average Case: `Θ(nk)`
+  
 
 ### Graph Algorithms
 
@@ -199,14 +200,14 @@ or equal to those of the children and the lowest key is in the root node
 * *Depth First Search* is a graph traversal algorithm which explores as far as possible along each branch before backtracking
 * Time Complexity: `O(|V| + |E|)`
 
-![Alt text](/images/dfsbfs.gif?raw=true "DFS / BFS Traversal")
+![Alt text](https://raw.githubusercontent.com/kdn251/interviews/master/images/dfsbfs.gif "DFS / BFS Traversal")
 
 #### Breadth First Search
 * *Breadth First Search* is a graph traversal algorithm which explores the neighbor nodes first, before moving to the next
   level neighbors
 * Time Complexity: `O(|V| + |E|)`
 
-![Alt text](/images/dfsbfs.gif?raw=true "DFS / BFS Traversal")
+![Alt text](https://raw.githubusercontent.com/kdn251/interviews/master/images/dfsbfs.gif "DFS / BFS Traversal")
 
 #### Topological Sort
 * *Topological Sort* is the linear ordering of a directed graph's nodes such that for every edge from node u to node v, u
@@ -217,7 +218,7 @@ or equal to those of the children and the lowest key is in the root node
 * *Dijkstra's Algorithm* is an algorithm for finding the shortest path between nodes in a graph
 * Time Complexity: `O(|V|^2)`
 
-![Alt text](/images/dijkstra.gif?raw=true "Dijkstra's")
+![Alt text](https://raw.githubusercontent.com/kdn251/interviews/master/images/dijkstra.gif "Dijkstra's")
 
 #### Bellman-Ford Algorithm
 * *Bellman-Ford Algorithm* is an algorithm that computes the shortest paths from a single source node to all other nodes in a weighted graph
@@ -227,7 +228,7 @@ or equal to those of the children and the lowest key is in the root node
   * Best Case: `O(|E|)`
   * Worst Case: `O(|V||E|)`
 
-![Alt text](/images/bellman-ford.gif?raw=true "Bellman-Ford")
+![Alt text](https://raw.githubusercontent.com/kdn251/interviews/master/images/bellman-ford.gif "Bellman-Ford")
 
 #### Floyd-Warshall Algorithm
 * *Floyd-Warshall Algorithm* is an algorithm for finding the shortest paths in a weighted graph with positive or negative edge weights, but
@@ -243,14 +244,14 @@ or equal to those of the children and the lowest key is in the root node
   subset of edges that forms a tree that includes every node in the graph
 * Time Complexity: `O(|V|^2)`
 
-![Alt text](/images/prim.gif?raw=true "Prim's Algorithm")
+![Alt text](https://raw.githubusercontent.com/kdn251/interviews/master/images/prim.gif "Prim's Algorithm")
 
 #### Kruskal's Algorithm
 * *Kruskal's Algorithm* is also a greedy algorithm that finds a minimum spanning tree in a graph. However, in Kruskal's, the graph does not
   have to be connected
 * Time Complexity: `O(|E|log|V|)`
 
-![Alt text](/images/kruskal.gif?raw=true "Kruskal's Algorithm")
+![Alt text](https://raw.githubusercontent.com/kdn251/interviews/master/images/kruskal.gif "Kruskal's Algorithm")
 
 ## Greedy Algorithms
 * *Greedy Algorithms* are algorithms that make locally optimal choices at each step in the hope of eventually reaching the globally optimal solution
@@ -298,7 +299,7 @@ or equal to those of the children and the lowest key is in the root node
 #### Big O Notation
 * *Big O Notation* is used to describe the upper bound of a particular algorithm. Big O is used to describe worst case scenarios
 
-![Alt text](/images/bigO.png?raw=true "Theta Notation")
+![Alt text](https://raw.githubusercontent.com/kdn251/interviews/master/images/bigO.png "Theta Notation")
 
 #### Little O Notation
 * *Little O Notation* is also used to describe an upper bound of a particular algorithm; however, Little O provides a bound
@@ -307,7 +308,7 @@ or equal to those of the children and the lowest key is in the root node
 #### Big Ω Omega Notation
 * *Big Omega Notation* is used to provide an asymptotic lower bound on a particular algorithm
 
-![Alt text](/images/bigOmega.png?raw=true "Theta Notation")
+![Alt text](https://raw.githubusercontent.com/kdn251/interviews/master/images/bigOmega.png "Theta Notation")
 
 #### Little ω Omega Notation
 * *Little Omega Notation* is used to provide a lower bound on a particular algorithm that is not asymptotically tight
@@ -316,7 +317,7 @@ or equal to those of the children and the lowest key is in the root node
 * *Theta Notation* is used to provide a bound on a particular algorithm such that it can be "sandwiched" between
   two constants (one for an upper limit and one for a lower limit) for sufficiently large values
 
-![Alt text](/images/theta.png?raw=true "Theta Notation")
+![Alt text](https://raw.githubusercontent.com/kdn251/interviews/master/images/theta.png "Theta Notation")
 
 ## Video Lectures
 * Data Structures
