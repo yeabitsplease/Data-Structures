@@ -87,7 +87,7 @@
   in the tree defines the key with which it is associated. All the descendants of a node have a common prefix of the String associated 
   with that node, and the root is associated with the empty String.
 
-![Alt text](/images/trie.png?raw=true "Trie")
+![Alt text](https://raw.githubusercontent.com/kdn251/interviews/master/images/trie.png "Trie")
 
 ### Fenwick Tree
 * A Fenwick tree, sometimes called a binary indexed tree, is a tree in concept, but in practice is implemented as an implicit data
