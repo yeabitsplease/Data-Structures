@@ -1,8 +1,7 @@
 # Data-Structures
 
 # Interviews
-> Your personal guide to Software Engineering technical interviews. Video
-> solutions to the following interview problems with detailed explanations can be found in this repository
+> Your personal guide to Software Engineering technical interviews. 
 
 > Maintainer - [Govind Saxena](https://github.com/yeabitsplease)
 
